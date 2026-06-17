@@ -1,0 +1,132 @@
+*{
+     margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+.container{
+    background-color: rgb(245, 243, 243);
+    padding: 15px 0 15px 0;
+    margin: 30px 400px 30px 400px;
+    text-align: center;  
+    border-radius: 15px;  
+}
+
+.emali input{
+    width: 400px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+
+.btn1{
+    width: 433px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: Blue;
+    color: white;
+    border: 1px solid blue;
+    margin-top: 20px;
+}
+
+.btn1:hover{
+    background-color: darkblue;
+    cursor:pointer;
+}
+.btn2{
+    width: 433px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 40px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.meta{
+    display: flex;
+    margin-top: 30px;
+    margin-left:250px;
+    align-items: center;
+    gap: 10px;
+}
+
+.meta img{
+    width: 30px;
+    height: 30px;
+}
+
+.meta p{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.get p{
+    text-align: left;
+    padding: 2px 70px ;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px;
+}
+
+.name input{
+     width: 180px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+
+.namenn{
+     text-align: left;
+    padding: 2px 70px ;
+}
+
+.date{
+    margin:0 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.int{
+     width: 140px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+.gender1{
+     text-align: left;
+     margin-top: 10px;
+    padding: 2px 70px ;
+}
+.gender{
+     width: 430px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
