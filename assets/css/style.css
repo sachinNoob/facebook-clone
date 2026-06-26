@@ -1,19 +1,37 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #EBEBEB;
+    --font-color: rgb(107, 105, 105);
+    --hover-color: #D0D0D0;
+}
+
+.dark {
+    --primary-color: #222;
+    --secondary-color: #363535;
+    --font-color: rgb(243, 239, 239);
+    --hover-color: #626060;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
+    position: relative;
     font-family: arial;
 }
 
 body {
-    background-color: rgb(224, 212, 212);
+    background-color: var(--secondary-color);
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--primary-color);
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -34,8 +52,8 @@ header img {
 }
 
 .top1 input {
-    background-color: rgb(224, 212, 212);
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--font-color);
     padding-left: 10px;
     width: 200px;
     border: 0px;
@@ -53,33 +71,32 @@ header img {
     gap: 15px;
 }
 
-#ppff{
+#ppff {
     display: none;
     position: absolute;
     background-color: white;
     top: 58px;
-    right:50px;
+    right: 50px;
     border-radius: 15px;
     padding: 5px 8px;
     font-size: 24px;
 }
 
-#ppff p{
+#ppff p {
     padding: 8px 10px;
 }
 
-#ppff p:hover{
+#ppff p:hover {
 
-background-color: rgb(198, 198, 219);
+    background-color: var(--hover-color);
 }
 
 #main {
-    background-color: rgb(221, 214, 214);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     padding-top: 60px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .acc {
@@ -87,14 +104,16 @@ background-color: rgb(198, 198, 219);
     gap: 15px;
     padding-left: 9px;
     font-size: 20px;
+    color: var(--font-color);
     align-items: center;
 }
 
-.acc:hover{
-    background-color: rgb(198, 198, 219);
+.acc:hover {
+    background-color: var(--hover-color);
 
     border-radius: 20px;
 }
+
 .acc img {
     height: 45px;
     width: 45px;
@@ -104,14 +123,16 @@ background-color: rgb(198, 198, 219);
 .acct {
     display: flex;
     padding: 8px 10px 10px 10px;
+    color: var(--font-color);
     gap: 13px;
     align-items: center;
 }
 
-.acct:hover{
-    background-color: rgb(198, 198, 219);
+.acct:hover {
+    background-color: var(--hover-color);
     border-radius: 20px;
 }
+
 .acct img {
     height: 35px;
     width: 35px;
@@ -124,7 +145,7 @@ background-color: rgb(198, 198, 219);
 
 .uplodbox {
     padding: 20px;
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: 10px;
 }
 
@@ -139,8 +160,8 @@ background-color: rgb(198, 198, 219);
     width: 350px;
     padding-left: 8px;
     border: 0px;
-    background-color: rgb(224, 212, 212);
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
 
 }
 
@@ -179,9 +200,10 @@ background-color: rgb(198, 198, 219);
     margin: 5px;
 }
 
-.story::-webkit-scrollbar{
+.story::-webkit-scrollbar {
     display: none;
 }
+
 .storyimg {
     width: 130px;
     height: 200px;
@@ -195,7 +217,7 @@ background-color: rgb(198, 198, 219);
 
 .cs-div {
     position: absolute;
-    background-color: white;
+    background-color: var(--primary-color);
     bottom: 4px;
     border-radius: 0 0 8px 8px;
     width: 100%;
@@ -203,7 +225,7 @@ background-color: rgb(198, 198, 219);
 }
 
 .create-story {
-    color: black;
+    color: var(--font-color);
     padding-top: 18px;
     font-size: 12px;
     text-align: center;
@@ -211,10 +233,10 @@ background-color: rgb(198, 198, 219);
 
 .storyplus img {
     position: absolute;
-    background-color: white;
+    background-color: var(--primary-color);
     left: 45px;
     z-index: 1;
-    border: 3px solid white;
+    border: 3px solid var(--primary-color);
     bottom: 21.5px;
     border-radius: 50px;
     width: 30px;
@@ -233,7 +255,7 @@ background-color: rgb(198, 198, 219);
 
 .ppname {
     position: absolute;
-    color: white;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 12px;
     bottom: 10px;
@@ -241,7 +263,7 @@ background-color: rgb(198, 198, 219);
 }
 
 .post {
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: 15px;
     margin-top: 5px;
 }
@@ -276,16 +298,17 @@ background-color: rgb(198, 198, 219);
     object-fit: cover;
 }
 
-.likecount{
+.likecount {
     display: flex;
     align-items: center;
 }
 
-.likecount img{
+.likecount img {
     width: 25px;
     height: 25px;
     margin-left: 10px;
 }
+
 .like {
     display: flex;
     justify-content: space-between;
@@ -304,16 +327,18 @@ background-color: rgb(198, 198, 219);
     padding: 15px;
     margin: 5px;
     border-radius: 20px;
-    background-color: rgb(243, 220, 220);
+    background-color: var(--primary-color);
 }
 
-.cmt:hover{
-    background-color: rgb(161, 156, 156);
+.cmt:hover {
+    background-color: var(--hover-color);
 }
-.rightsb{
+
+.rightsb {
     position: sticky;
 
 }
+
 .topcon {
     display: flex;
     justify-content: space-between;
@@ -326,14 +351,16 @@ background-color: rgb(198, 198, 219);
 }
 
 .friends {
-        margin-left: 5px;
+    margin-left: 5px;
     margin-right: 5px;
 }
-.friends:hover{
-     background-color: rgb(198, 198, 219);
+
+.friends:hover {
+    background-color: var(--hover-color);
     border-radius: 20px;
 
 }
+
 .friendprf {
     display: flex;
     padding: 10px 10px 10px 13px;
@@ -347,66 +374,109 @@ background-color: rgb(198, 198, 219);
     border-radius: 50px;
 }
 
-.leftsb, .rightsb {
+.leftsb,
+.rightsb {
     position: sticky;
     top: 60px;
     height: fit-content;
 }
 
-.addfrd{
+.addfrd {
     display: flex;
     justify-content: space-between;
 }
 
-.frd{
-    display: flex; 
+.frd {
+    display: flex;
     padding: 10px;
     gap: 5px;
 }
 
-.frnd-req-pp{
+.frnd-req-pp {
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50px;
 }
 
-.cnf{
+.cnf {
     display: flex;
-    margin-top:10px;
+    margin-top: 10px;
     gap: 10px;
 }
 
-.cnf button  {
-        padding: 10px;
+.cnf button {
+    padding: 10px;
     border-radius: 5px;
     border: 0px;
 
 }
 
-.mutual-frd, .mutualimg{
+.mutual-frd,
+.mutualimg {
     display: flex;
 }
 
-.mutualimg img{
+.mutualimg img {
     height: 20px;
     width: 20px;
     border-radius: 100%;
 }
 
-.mutualimg{
+.mutualimg {
     position: relative;
 }
 
-.mutual2{
+.mutual2 {
     position: absolute;
     left: 10px;
 }
 
-.mutual1{
+.mutual1 {
     z-index: 10;
 }
 
 .mutual1 img {
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
+}
+
+#msg1 {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 58px;
+    right: 50px;
+    border-radius: 15px;
+    padding: 5px 8px;
+    font-size: 24px;
+}
+
+#msg-box {
+    display: none;
+    position: relative;
+}
+#mesg {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    bottom: 0;
+    right: 250px;
+    z-index: 9;
+}
+
+.mesg-box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.msg-box-ppf{
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg-box-img, .msg-box-close{
+    width: 15px;
+    height: 15px;
 }

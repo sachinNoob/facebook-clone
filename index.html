@@ -7,7 +7,7 @@
     <title>Facebook</title>
     <link rel="shortcut icon" href="./assets/img/communication.PNG" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
-   
+
 </head>
 
 <body>
@@ -17,19 +17,55 @@
             <input type="text" placeholder="Search Facebook">
         </div>
         <div class="top2">
-            <img src="./assets/img/home (1).png" alt="">
-            <img src="./assets/img/video.png" alt="">
-            <img src="./assets/img/groups.png" alt="">
+            <img src="./assets/img/home (1).png" class="darkImg" alt="">
+            <img class="darkImg" src="./assets/img/video.png" alt="">
+            <img class="darkImg" src="./assets/img/groups.png" alt="">
         </div>
         <div class="top3">
-            <img src="./assets/img/dots-menu.PNG" alt="">
-            <img src="./assets/img/messenger.PNG" alt="">
-            <img src="./assets/img/notification.PNG" alt="">
+            <img class="darkImg" src="./assets/img/dots-menu.PNG" alt="">
+            <img class="darkImg" id="msg" src="./assets/img/messenger.PNG" alt="">
+            <div id="msg1">
+                <div>
+
+                    <div class="friendprf" id="mesg1">
+                        <img src="./assets/img/prf.png" alt="">
+                        <p>Sachin Manandhar</p>
+                    </div>
+
+                    <div class="friendprf">
+                        <img src="./assets/img/prf.png" alt="">
+                        <p>Sachin Manandhar</p>
+                    </div>
+
+                    <div class="friendprf">
+                        <img src="./assets/img/prf.png" alt="">
+                        <p>Sachin Manandhar</p>
+                    </div>
+
+                    <div class="friendprf">
+                        <img src="./assets/img/prf.png" alt="">
+                        <p>Sachin Manandhar</p>
+                    </div>
+
+                    <div class="friendprf">
+                        <img src="./assets/img/prf.png" alt="">
+                        <p>Sachin Manandhar</p>
+                    </div>
+
+                    <div class="friendprf">
+                        <img src="./assets/img/prf.png" alt="">
+                        <p>Sachin Manandhar</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <img class="darkImg" src="./assets/img/notification.PNG" alt="">
             <img id="ppf" src="./assets/img/prf.png" alt="profile" style="width: 33px;height: 33px;
             border-radius: 50px;">
-            <div id="ppff" >
+            <div id="ppff">
                 <p>profile</p>
-                <p>Theme</p>
+                <p id="btwn">Theme</p>
                 <p>Settings</p>
                 <p>Log out</p>
             </div>
@@ -121,7 +157,7 @@
                     <div class="cs-div">
                         <p class="create-story">Create Story</p>
                     </div>
-                </div> 
+                </div>
                 <div class="img-story">
                     <div>
                         <img class="pp" src="./assets/img/prf.png" alt="">
@@ -204,13 +240,13 @@
                 <div class="likecount">
                     <div>
                         <img src="./assets/img/facebook-reactions.png" alt="">
-                    </div> 
+                    </div>
                     <p>1.2m</p>
                 </div>
                 <div class="like">
-                    <div class="cmt">
-                        <img src="./assets/img/like.PNG" alt="">
-                        <p>Like</p>
+                    <div class="like-section f cmt">
+                        <img class="likess" src="./assets/img/like.PNG" alt="">
+                        <p class="likesss">Like</p>
                     </div>
                     <div class="cmt">
                         <img src="./assets/img/comment.PNG" alt="">
@@ -243,9 +279,9 @@
                     <p>1.2m</p>
                 </div>
                 <div class="like">
-                    <div class="cmt">
-                        <img src="./assets/img/like.PNG" alt="">
-                        <p>Like</p>
+                    <div class="like-section s cmt">
+                        <img class="likess" src="./assets/img/like.PNG" alt="">
+                        <p class="likesss">Like</p>
                     </div>
                     <div class="cmt">
                         <img src="./assets/img/comment.PNG" alt="">
@@ -278,9 +314,9 @@
                     <p>1.2m</p>
                 </div>
                 <div class="like">
-                    <div class="cmt">
-                        <img src="./assets/img/like.PNG" alt="">
-                        <p>Like</p>
+                    <div class="like-section cmt">
+                        <img class="likess" src="./assets/img/like.PNG" alt="">
+                        <p class="likesss">Like</p>
                     </div>
                     <div class="cmt">
                         <img src="./assets/img/comment.PNG" alt="">
@@ -292,43 +328,65 @@
                     </div>
                 </div>
             </div>
+
+
+            <div id="msg-box">
+                <div id="mesg">
+                    <div class="mesg-box">
+                        <div class="msg-box-ppf">
+                            <div>
+                                <img class="msg-box-img" src="./assets/img/prf.png" alt="">
+                            </div>
+                            <p>Sachin Manandhar</p>
+                        </div>
+
+                        <div>
+                            <img class="msg-box-close" src="./assets/img/close.png" alt="close">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div class="rightsb">
-            <div class="addfrd">
-                <p><b>Friends Request</b></p>
-                <p style="color: blue;">see all</p>
-            </div>
-            <div id="frd" class="frd">
-                <div>
-                    <img class="frnd-req-pp" src="./assets/img/shreejal.png" alt="">
+            <div id="frds" class="frds">
+                <div class="addfrd">
+                    <p><b>Friends Request</b></p>
+                    <p style="color: blue;">see all</p>
                 </div>
-                <div>
-                    <div class="frdname">
-                        <div style="display: flex; justify-content: space-between; align-items: center;gap: 20px;">
-                            <P style="font-weight: 600;">Shreejal Twyana </P>
-                            <p style="font-size:13px;">5d.</p>
-                        </div>
-                        <div class="mutual-frd">
-                        <div class="mutualimg">
-                            <div class="mutual1"><img src="./assets/img/prf.png" alt=""></div>
-                            <div class="mutual2"><img src="./assets/img/shreejal.png" alt=""></div>
-                        </div>    
-                            <p style="font-size: 13px;">112 mutual friend</p>
-                        </div>
+                <div class="frd">
+                    <div>
+                        <img class="frnd-req-pp" src="./assets/img/shreejal.png" alt="">
                     </div>
-                    <div class="cnf">
-                        <div>
-                            <button id="confirm" style="background-color:blue; color: white;">Confirm</button>
+                    <div>
+                        <div class="frdname">
+                            <div style="display: flex; justify-content: space-between; align-items: center;gap: 20px;">
+                                <P style="font-weight: 600;">Shreejal Twyana </P>
+                                <p style="font-size:13px;">5d.</p>
+                            </div>
+                            <div class="mutual-frd">
+                                <div class="mutualimg">
+                                    <div class="mutual1"><img src="./assets/img/prf.png" alt=""></div>
+                                    <div class="mutual2"><img src="./assets/img/shreejal.png" alt=""></div>
+                                </div>
+                                <p style="font-size: 13px;">112 mutual friend</p>
+                            </div>
                         </div>
-                        <div>
-                            <button id="delete" style="background-color: gray; color: white;">Delete</button>
-                        </div>
+                        <div class="cnf">
+                            <div>
+                                <button id="confirm" style="background-color:blue; color: white;">Confirm</button>
+                            </div>
+                            <div>
+                                <button id="delete" style="background-color: gray; color: white;">Delete</button>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
+                <hr>
             </div>
-            <hr>
+
             <div class="topcon">
                 <div class="contact">
                     <b>Contacts</b>
@@ -338,63 +396,59 @@
                     <img src="./assets/img/social-media.png" alt="3dot">
                 </div>
             </div>
+
             <div class="friends">
+
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
-            </div>
-            <div class="friends">
+
                 <div class="friendprf">
                     <img src="./assets/img/prf.png" alt="">
                     <p>Sachin Manandhar</p>
                 </div>
+
             </div>
+
         </div>
-    </div>
-    <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
