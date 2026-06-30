@@ -104,3 +104,50 @@ for (let likebtns of likebtn) {
 
 
 };
+
+
+let form = document.getElementById('myform');
+let name = document.getElementById('name').value.trim();
+let sname = document.getElementById('sname').value.trim();
+let date = document.getElementById('date').value.trim();
+let month = document.getElementById('month').value.trim();
+let year = document.getElementById('year').value.trim();
+let gender = document.getElementById('gender').value.trim();
+let email = document.getElementById('email').value.trim();
+let pass = document.getElementById('password').value.trim();
+let fname = document.getElementById('errorfname').value.trim();
+let suname = document.getElementById('errorsname').value.trim();
+let datein = document.getElementById('errordate').value.trim();
+let genderr = document.getElementById('errorgender').value.trim();
+let mail = document.getElementById('mail').value.trim();
+let password = document.getElementById('password').value.trim();
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (name === "") {
+        fname.innerText = "Fill first name";
+        fname.style.color = "red";
+    }
+    else if (sname === "") {
+        suname.innerText = "Fill second name";
+        suname.style.color = "red";
+    }
+    else if (date === "") {
+        datein.innerText = "Fill your DOB";
+        datein.style.color = "red";
+    } else if (month === "") {
+        datein.innerText = "Fill your DOB";
+        datein.style.color = "red";
+    } else if (year === "") {
+        datein.innerText = "Fill your DOB";
+        datein.style.color = "red";
+    } else if (gender === "") {
+        genderr.innerText = "Select your gender";
+        genderr.style.color = "red";
+    } else if (mail === "") {
+        email.innerText = "Fill your email or number";
+        email.style.color = "red";
+    }else if()
+
+
+})
