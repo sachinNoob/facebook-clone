@@ -44,7 +44,7 @@ theme.addEventListener('click', () => {
     localStorage.setItem('theme', darktheme ? 'dark' : 'light');
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         document.documentElement.classList.add('dark');
@@ -56,21 +56,21 @@ let frdss = document.getElementsByClassName('friendprf')[0];
 let msg_box = document.getElementById('msg-box');
 
 frdss.addEventListener("click", () => {
-
+    
     if (msg_box.style.display == "block") {
         console.log('block')
         msg_box.style.display = "none";
     } else {
         msg1.style.display = "none";
         msg_box.style.display = "block"
-
+        
     }
 });
 
 let closemsgbox = document.getElementsByClassName('msg-box-close')[0];
 
 closemsgbox.addEventListener("click", () => {
-
+    
     msg_box.style.display = "none";
 });
 
@@ -79,30 +79,30 @@ for (let likebtns of likebtn) {
     likebtns.addEventListener('click', (e) => {
         let element = e.target;
         console.log(element)
-
+        
         let like_text = element.getElementsByClassName('likesss')[0]
         let like_img = element.getElementsByClassName('likess')[0]
-
+        
         if (like_text.textContent == 'Like') {
-
+            
             like_img.src = "./assets/img/facebook-reactions.png";
             like_text.innerText = "Liked";
-
+            
             like_text.style.color = "blue";
         } else {
-
+            
             like_img.src = "./assets/img/facebook-reactions.png";
             like_text.innerText = "Like";
-
+            
             like_text.style.color = "black";
-
+            
         }
-
-
-
+        
+        
+        
     })
-
-
+    
+    
 };
 
 
@@ -123,16 +123,14 @@ let mail = document.getElementById('mail').value.trim();
 let password = document.getElementById('password').value.trim();
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    
     if (name === "") {
         fname.innerText = "Fill first name";
         fname.style.color = "red";
-    }
-    else if (sname === "") {
+    } else if (sname === "") {
         suname.innerText = "Fill second name";
         suname.style.color = "red";
-    }
-    else if (date === "") {
+    } else if (date === "") {
         datein.innerText = "Fill your DOB";
         datein.style.color = "red";
     } else if (month === "") {
@@ -147,7 +145,10 @@ form.addEventListener("submit", (e) => {
     } else if (mail === "") {
         email.innerText = "Fill your email or number";
         email.style.color = "red";
-    }else if()
-
-
-})
+    } else if (password === "") {
+        pass.innerText = "Fill your email or number";
+        pass.style.color = "red";
+    } else {
+        alert('Form submitted ');
+    }
+});
